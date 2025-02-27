@@ -90,6 +90,8 @@ class Options {
 }
 ```
 
+See [VerdictTest.java](src/test/java/com/freakynit/verdict/VerdictTest.java) for comprehensive usage guide.
+
 ---
 
 ## Running Tests
