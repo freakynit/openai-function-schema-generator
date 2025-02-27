@@ -52,7 +52,7 @@ Annotate your classes and fields with `@SchemaInfo` to customize the schema:
 
 ```java
 public static void main(String[] args) {
-    String schemaJson = new JsonSchemaGenerator().generate(SampleFunction.class);
+    String schemaJson = JsonSchemaGenerator.generate(SampleFunction.class);
     System.out.println(schemaJson);
 }
 
