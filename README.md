@@ -147,7 +147,7 @@ class Options {
 }
 ```
 
-See [VerdictTest.java](src/test/java/com/freakynit/verdict/VerdictTest.java) for comprehensive usage guide.
+See [JsonSchemaGeneratorTest.java](src/test/java/com/freakynit/openai/function/schema/generator/JsonSchemaGeneratorTest.java) for comprehensive usage guide.
 
 ---
 
@@ -159,7 +159,7 @@ A comprehensive suite of tests is provided using JUnit 5. To run the tests:
 2. Compile the test files along with the source files.
 3. Run the tests using your preferred build tool (e.g., Maven, Gradle) or directly from your IDE.
 
-Tests are present in [VerdictTest.java](src/test/java/com/freakynit/verdict/VerdictTest.java).
+Tests are present in [JsonSchemaGeneratorTest.java](src/test/java/com/freakynit/openai/function/schema/generator/JsonSchemaGeneratorTest.java).
 
 The tests cover a wide range of scenarios including empty classes, primitives, collections, nested objects, enums, and annotation overrides.
 
