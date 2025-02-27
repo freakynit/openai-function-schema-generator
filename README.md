@@ -90,6 +90,63 @@ class Options {
 }
 ```
 
+#### Output
+```json
+{
+  "type" : "function",
+  "function" : {
+    "name" : "sampleFunction",
+    "description" : "This function does something interesting.",
+    "strict" : true,
+    "parameters" : {
+      "type" : "object",
+      "properties" : {
+        "email" : {
+          "type" : "string",
+          "description" : "A required string field.",
+          "format" : "email"
+        },
+        "count" : {
+          "type" : "integer",
+          "description" : "An optional number field."
+        },
+        "purchased_date" : {
+          "type" : "datetime",
+          "description" : "A required date field.",
+          "format" : "yyyy-mm-dd"
+        },
+        "options" : {
+          "type" : "object",
+          "properties" : {
+            "flag" : {
+              "type" : "boolean",
+              "description" : "A flag option."
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "string"
+              },
+              "description" : "A list of items.",
+              "format" : "uuid"
+            },
+            "item_status" : {
+              "type" : "string",
+              "enum" : [ "IDLE", "PROCESSING", "DONE", "FAILED" ],
+              "description" : "Status of item."
+            }
+          },
+          "required" : [ "flag" ],
+          "description" : "Additional options for the function."
+        }
+      },
+      "required" : [ "email", "purchased_date" ],
+      "additionalProperties" : false
+    }
+  }
+}
+```
+
 See [VerdictTest.java](src/test/java/com/freakynit/verdict/VerdictTest.java) for comprehensive usage guide.
 
 ---
